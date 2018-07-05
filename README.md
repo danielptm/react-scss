@@ -1,6 +1,6 @@
 ## Note
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-It has been ejected and configured for scss modules. If you dont want to have scss modules but just regular scss, just use create-react-app default settings.
+It has been ejected and configured for scss modules. If you dont want to have scss modules but just regular css, just use create-react-app default settings.
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).

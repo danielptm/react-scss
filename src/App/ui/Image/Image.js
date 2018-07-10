@@ -1,14 +1,29 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './Image.scss';
 
-class Image extends Component {
-  render() {
-    return (
-      <div>
-        <img className={styles.image} src={require("../../../assets/daniel.png")} />
-      </div>
-    );
-  }
+const Image = (props) => {
+  let imageStyle = null;
+  const path = props.path;
+  switch(props.size){
+    case 'small':
+      imageStyle = styles.smallImage;
+      break;
+    case 'medium':
+      imageStyle = styles.image;
+      break;
+    default:
+      imageStyle = styles.image;
+      break;
+    }
+  const image =       
+        <a href={props.linkPath}><img 
+          className={imageStyle}
+          src={path} /></a>
+  return (
+    <div className={styles.imageContainer}>
+      {image}
+    </div>
+  );
 }
 
 export default Image;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Image.scss';
 
+
+
 const Image = (props) => {
   let imageStyle = null;
   const path = props.path;
@@ -15,14 +17,28 @@ const Image = (props) => {
       imageStyle = styles.image;
       break;
     }
-  const image =       
+    
+    let image =       
+          <a href={props.linkPath}><img 
+            className={imageStyle}
+            src={path} /></a>
+    
+    const enter = () =>{
+      if(props.path2 != undefined){
+        this.image = 
         <a href={props.linkPath}><img 
           className={imageStyle}
-          src={path} /></a>
+          src={props.path2} />
+        </a>
+      }
+    }
+    
   return (
-    <div className={props.size ==='medium' 
-    ? styles.imageContainer : styles.smallImagecontainer}>
-      {image}
+    <div 
+      onMouseEnter={enter}
+      className={props.size ==='medium' 
+      ? styles.imageContainer : styles.smallImagecontainer}>
+        {image}
     </div>
   );
 }

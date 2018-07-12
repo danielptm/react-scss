@@ -1,3 +1,9 @@
+.imageContainer{
+  display: inline;
+  margin: auto;
+  margin-left: 10px;
+}
+
 .image{
   position: relative;
   transform: translate(-50%, 50%);
@@ -12,8 +18,16 @@
   background-color: whitesmoke;
 }
 
-.image:hover{
+.imageContainer:hover{
   cursor: pointer;
+}
+
+.smallImagecontainer{
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: auto;
+  margin-left: 10px;
 }
 
 .smallImage{
@@ -28,12 +42,32 @@
   background-color: whitesmoke;
 }
 
-.imageContainer{
-  display: inline;
-  margin: auto;
-  margin-left: 10px;
+.smallImagecontainer:hover{
+  cursor: pointer;
+  animation-name: smallImage, explode;
+  animation-duration: 500ms;
 }
 
-.smallImage:hover{
-  cursor: pointer;
+@keyframes smallImage {
+    from {
+      background-color: #EAAFF7
+    }
+    to {
+      background-color: #7E1494
+    }
+}
+
+@keyframes explode {
+    from {
+      clip-path: circle(50% at 50% 50%);
+    }
+    to {
+      clip-path: circle(100% at 50% 50%);
+    }
+    from {
+      box-shadow: 1px 1px 1px #EAAFF7;
+    }
+    to {
+      box-shadow: 2px 2px 2px 1px #7E1494;
+    }
 }

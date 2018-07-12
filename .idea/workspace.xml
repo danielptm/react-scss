@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5231e3c1-175a-477f-bc14-01a7224a74fc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App/ui/City/City.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/City/City.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/ui/City/City.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/City/City.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/ui/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/ui/Footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/Footer/Footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/ui/Image/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/Image/Image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/ui/Image/Image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/Image/Image.scss" afterDir="false" />
     </list>
@@ -20,17 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Image.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/App/ui/Image/Image.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,13 +144,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145000" />
+    <option name="totallyTimeSpent" value="146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21800947" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -172,16 +157,18 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32983193" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3197556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">

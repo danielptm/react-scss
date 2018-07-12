@@ -20,7 +20,8 @@ const Image = (props) => {
           className={imageStyle}
           src={path} /></a>
   return (
-    <div className={styles.imageContainer}>
+    <div className={props.size ==='medium' 
+    ? styles.imageContainer : styles.smallImagecontainer}>
       {image}
     </div>
   );

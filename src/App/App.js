@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
-import styles from './App.scss';
+import {BrowserRouter} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Footer from './ui//Footer/Footer';
 import City from './ui/City/City';
 import Header from './ui/containers/Header/Header';
+import About from "./routes/About/About";
+import Experience from "./routes/Experience/Experience";
 
 class App extends Component {
   render() {
     return (
       <div>
-          <Header />
-          <City />
+          <BrowserRouter>
+                  <Switch>
+                      <Route path="/" exact component={City} />
+                      <Route path="/about" exact component={About} />
+                      <Route path="/experience" exact component={Experience} />
+                      <Route path="/*" exact component={City} />
+                  </Switch>
+              </BrowserRouter>
           <Footer />
       </div>
     );

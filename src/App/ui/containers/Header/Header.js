@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import {Link, withRouter} from 'react-router-dom';
 import style from './Header.scss';
 import image from '../../../../assets/me.jpg';
 
 
-class MainImage extends Component{
+class Header extends Component{
 
     constructor(props){
         super(props);
@@ -18,23 +19,37 @@ class MainImage extends Component{
         if(item === 'about') {
             this.setState({aboutMePressed: true});
             this.setState({experiencePressed: false});
+            this.routeToAbout();
 
         } else {
             this.setState({experiencePressed: true});
             this.setState({aboutMePressed: false})
+            this.routeToExperience()
 
         }
+    }
+
+    routeToAbout = () => {
+        this.props.history.push('/about');
+    }
+
+    routeToCity() {
+        this.props.history.push('/');
+    }
+
+    routeToExperience() {
+        this.props.history.push('/experience');
     }
 
     render() {
         return(
             <div className={style.container}>
-                <img className={style.image} src={image} />
+                <img onClick={() => this.routeToCity()} className={style.image} src={image} />
                 <ul className={style.list}>
                     <li
                         onClick={ () => this.toggleLink('about')}
                         className={this.state.aboutMePressed ? style.listItemPressed : style.listItem}>
-                        <a>about me</a></li>
+                        <a>about</a></li>
                     <li
                         onClick={() => this.toggleLink('experience')}
                         className={this.state.experiencePressed ? style.listItemPressed : style.listItem}>
@@ -45,4 +60,4 @@ class MainImage extends Component{
     }
 }
 
-export default MainImage;
+export default withRouter(Header);

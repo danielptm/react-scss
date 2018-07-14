@@ -19,7 +19,9 @@ class MainImage extends Component{
     render() {
         return(
           <div>
-              <img onMouseEnter={this.switchImage} className={style.image} src={this.state.image} />
+              <div className={style.imageContainer}>
+                <img onMouseEnter={this.switchImage} className={style.image} src={this.state.image} />
+              </div>
           </div>
         );
     }

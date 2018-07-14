@@ -1,10 +1,4 @@
 .imageContainer{
-  display: inline;
-  margin: auto;
-  margin-left: 10px;
-}
-
-.image{
   position: relative;
   transform: translate(-50%, 50%);
   height: 300px;
@@ -16,12 +10,29 @@
   border-color: gray;
   box-shadow: 2px 2px 20px gray;
   background-color: whitesmoke;
+
+}
+
+.image{
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  //transform: translate(-50%, 50%);
+  //left: 50%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: gray;
+  box-shadow: 2px 2px 20px gray;
+  background-color: whitesmoke;
 }
 
 .image:hover{
   cursor: pointer;
   animation-name: transition;
-  animation-duration: 1000ms;
+  animation-duration: 300ms;
 }
 
 @keyframes transition {

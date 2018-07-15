@@ -12,13 +12,16 @@ class App extends Component {
     return (
       <div>
           <BrowserRouter>
+              <div>
+                  <Header />
                   <Switch>
                       <Route path="/" exact component={City} />
                       <Route path="/about" exact component={About} />
                       <Route path="/experience" exact component={Experience} />
                       <Route path="/*" exact component={City} />
                   </Switch>
-              </BrowserRouter>
+              </div>
+          </BrowserRouter>
           <Footer />
       </div>
     );

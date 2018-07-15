@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.image{
+  height: 150px;
+  width: auto;
+  border-radius: 50%;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: whitesmoke;
+}
+
+.title{
+  font-size: 22px;
+}
+
+.description{
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.textContainer {
+  padding: 60px;
+}
+
+.url {
+  margin-top: 10px;
+  float: right;
+}

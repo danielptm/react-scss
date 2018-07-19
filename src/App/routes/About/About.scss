@@ -1,5 +1,149 @@
+
+
 .container{
   padding-top: 150px;
-  height: 85vh;
+  min-height: 85vh;
+  height: 100%;
   background-color: whitesmoke;
+
+}
+
+.image{
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: lightgray;
+  margin: 0 auto;
+  display: block;
+  transform: translate(0px, 100px);
+  animation: imageMove 400ms linear;
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+}
+
+.about{
+  display: block;
+  visibility: hidden;
+  height: 300px;
+  width: 95%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  animation-duration: 1000ms;
+  animation-delay: 1000ms;
+  animation-name: aboutDrop;
+  animation-fill-mode: forwards;
+}
+
+.aboutText{
+  padding: 10px;
+  font-size: 22px;
+  animation-duration: 1000ms;
+  animation-delay: 1000ms;
+  animation-name: textAppear;
+}
+.imagesButton{
+  display: inline;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+.imagesButton:hover{
+  cursor:pointer;
+}
+
+.imagesButton:active{
+  animation-name: buttonPress;
+  animation-duration: 1500ms;
+}
+
+.images{
+  width: 50px;
+  height: 50px;
+}
+
+.toolTip{
+  display: none;
+}
+
+button:hover > .toolTip {
+  position: absolute;
+  transform: translate(60px, 0px);
+  display: block;
+}
+
+.flagContainer{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flag{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.flag:hover{
+  cursor: pointer;
+}
+
+.toolTip{
+  width: 100px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@keyframes aboutDrop {
+  from{
+    height: 0px;
+    visibility: visible;
+  }
+  to{
+    height: 300px;
+    visibility: visible;
+  }
+}
+
+@keyframes textAppear {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imageMove {
+  0%{
+    width: 350px;
+    height: 350px;
+    transform: translate(0px, 100px);
+  }
+  100%{
+    width: 250px;
+    height: 250px;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes buttonPress {
+  from {
+    background-color: yellow;
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    background-color: yellow;
+    clip-path: circle(100% at 50% 50%);
+  }
 }

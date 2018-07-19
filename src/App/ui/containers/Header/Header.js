@@ -34,6 +34,8 @@ class Header extends Component{
     }
 
     routeToCity() {
+        this.setState({experiencePressed: false});
+        this.setState({aboutMePressed: false});
         this.props.history.push('/');
     }
 

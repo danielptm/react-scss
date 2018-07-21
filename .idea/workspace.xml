@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5231e3c1-175a-477f-bc14-01a7224a74fc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App/ui/SlideShowImage/SlideShowImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App/ui/SlideShowImage/SlideShowImage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/routes/Projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/routes/Projects/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/ui/containers/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/ui/containers/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/routes/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/routes/About/About.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,88 +15,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4848266">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="SlideShowImage.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/App/ui/SlideShowImage/SlideShowImage.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Header.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App/ui/containers/Header/Header.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App/ui/containers/Header/Header.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="36" selection-start-line="1" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="SlideShowImage.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App/ui/SlideShowImage/SlideShowImage.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ImageSlideShow.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ImageSlideShow.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ExperienceBlurb.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App/ui/ExperienceBlurb/ExperienceBlurb.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="About.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App/routes/About/About.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -136,7 +62,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/App/App.js" />
         <option value="$PROJECT_DIR$/src/App/routes/Experience/Experience.scss" />
-        <option value="$PROJECT_DIR$/src/App/routes/About/About.js" />
         <option value="$PROJECT_DIR$/src/App/routes/About/About.scss" />
         <option value="$PROJECT_DIR$/src/App/routes/Projects/Projects.js" />
         <option value="$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.scss" />
@@ -144,6 +69,7 @@
         <option value="$PROJECT_DIR$/src/App/ui/containers/Header/Header.scss" />
         <option value="$PROJECT_DIR$/src/App/ui/SlideShowImage/SlideShowImage.scss" />
         <option value="$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.js" />
+        <option value="$PROJECT_DIR$/src/App/routes/About/About.js" />
       </list>
     </option>
   </component>
@@ -219,24 +145,8 @@
               <item name="react-scss" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-scss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-scss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-scss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-scss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,12 +200,12 @@
       <workItem from="1531646746744" duration="3983000" />
       <workItem from="1531988619843" duration="12583000" />
       <workItem from="1532165642025" duration="6403000" />
-      <workItem from="1532198676274" duration="4042000" />
+      <workItem from="1532198676274" duration="4275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40676000" />
+    <option name="totallyTimeSpent" value="40909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -561,16 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/routes/About/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="61" column="56" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App/routes/About/About.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -582,13 +482,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="191" selection-start-line="20" selection-start-column="191" selection-end-line="20" selection-end-column="191" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/ui/ExperienceBlurb/ExperienceBlurb.js">
+    <entry file="file://$PROJECT_DIR$/src/App/ui/containers/Header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        <state relative-caret-position="15">
+          <caret line="1" column="36" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -612,24 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/ui/containers/Header/Header.js">
+    <entry file="file://$PROJECT_DIR$/src/App/ui/ExperienceBlurb/ExperienceBlurb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="36" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/ui/containers/Header/Header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/routes/ImageSlideShow/ImageSlideShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -640,6 +536,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/ui/containers/Header/Header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/routes/About/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

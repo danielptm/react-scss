@@ -62,6 +62,7 @@ class About extends Component {
                 <div className={style.mainImageContainer}>
                     <img className={style.image} src={image} />
                     <button
+                        disabled
                         onClick={this.routeToSlideShow}
                         className={style.imagesButton}>
                         <div className={style.toolTip}>Image slide show coming soon!</div>

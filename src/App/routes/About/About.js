@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {withRouter} from 'react-router-dom';
 import style from './About.scss';
 import image from '../../../assets/daniel2.png';
 import images from '../../../assets/images.svg';
@@ -33,7 +34,7 @@ class About extends Component {
     swedishText = () => {
         return (
             <div className={style.aboutText}>
-                Hej! Jag heter Daniel. Jag kommer från Seattle men har bott mest some en vuxen i Stockholm. Jag är en ganska lugn person
+                Hej! Jag heter Daniel. Jag kommer från Seattle men har bott mest som en vuxen i Stockholm. Jag är en ganska lugn person
                 men kan bli passionerad och ha mycket energi när jag gör nånting som jag tar på allvar.
                 Jag gillar att jobba vilket är med kodning, så jag brukar också göra det som en hobby.
                 Men jag har många andra intressen. Jag gillar att laga mat, åka snowboard, cykla, vara i naturen,
@@ -50,19 +51,27 @@ class About extends Component {
         this.setState({english: false, swedish: true})
     }
 
+    routeToSlideShow = () => {
+        console.log('heyhey');
+        this.props.history.push('/slideshow');
+    }
+
     render(){
         return (
             <div className={style.container}>
-                <img className={style.image} src={image} />
+                <div className={style.mainImageContainer}>
+                    <img className={style.image} src={image} />
+                    <button
+                        onClick={this.routeToSlideShow}
+                        className={style.imagesButton}>
+                        <div className={style.toolTip}>Image slide show coming soon!</div>
+                        <img className={style.images} src={images} /></button>
+                </div>
                 <div className={style.about}>
                     {this.state.english ? this.englishText() : this.swedishText() }
                     <div className={style.flagContainer}>
                         <img onClick={this.toggleEnglish} className={style.flag} src={usa} />
                         <img onClick={this.toggleSwedish} className={style.flag} src={sweden} />
-                        <button
-                            className={style.imagesButton}>
-                            <div className={style.toolTip}>Image slide show coming soon!</div>
-                            <img className={style.images} src={images} /></button>
                     </div>
                     <div>
                     </div>
@@ -72,4 +81,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default withRouter(About);

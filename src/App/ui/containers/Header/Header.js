@@ -11,7 +11,8 @@ class Header extends Component{
         this.state = {
             showHeader: false,
             aboutMePressed: false,
-            experiencePressed: false
+            experiencePressed: false,
+            projectsPressed: false
         }
     }
 
@@ -19,12 +20,20 @@ class Header extends Component{
         if(item === 'about') {
             this.setState({aboutMePressed: true});
             this.setState({experiencePressed: false});
+            this.setState({projectsPressed: false});
             this.routeToAbout();
 
-        } else {
+        } else if(item==='experience') {
             this.setState({experiencePressed: true});
-            this.setState({aboutMePressed: false})
-            this.routeToExperience()
+            this.setState({aboutMePressed: false});
+            this.setState({projectsPressed: false});
+            this.routeToExperience();
+
+        } else if('projects') {
+            this.setState({experiencePressed: false});
+            this.setState({aboutMePressed: false});
+            this.setState({projectsPressed: true});
+            this.routeToProjects();
 
         }
     }
@@ -43,6 +52,10 @@ class Header extends Component{
         this.props.history.push('/experience');
     }
 
+    routeToProjects() {
+        this.props.history.push('/projects');
+    }
+
     render() {
         return(
             <div className={style.container}>
@@ -56,6 +69,10 @@ class Header extends Component{
                         onClick={() => this.toggleLink('experience')}
                         className={this.state.experiencePressed ? style.listItemPressed : style.listItem}>
                     <a>experience</a></li>
+                    <li
+                        onClick={() => this.toggleLink('projects')}
+                        className={this.state.projectsPressed ? style.listItemPressed : style.listItem}>
+                        <a>projects</a></li>
                 </ul>
             </div>
         );

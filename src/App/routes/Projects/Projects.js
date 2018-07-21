@@ -18,7 +18,7 @@ class Projects extends React.Component {
                         description={'I came up with an idea for a hobby project which became the basis of a company. ' +
                         'I designed and built the entire Globati platform (globati.com). This was built with angular, react-native, java, node and AWS for hosting and database services.' +
                         'It is hosted on 3 S3 buckets and connects through an API built with java/spring on an elastic beanstalk instance. ' +
-                        'The mobile app was built with react-native and is available on Googleplay as well as Appstore. The app is served from a node server. If you want to see the app in action, make sure to search for Stockholm. '
+                        'The mobile app was built with react-native and is available on Googleplay as well as Appstore. The app connects to an api written in node also on an elastic beanstalk. If you want to see the app in action, make sure to search for Stockholm. '
                         }
                     />
                     <ExperienceBlurb

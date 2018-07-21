@@ -5,7 +5,9 @@ class ImageSlideShow extends React.Component {
     render() {
         return(
             <div className={style.imageSlideShowContainer}>
-                imageSlideshow
+                <div className={style.innerContainer}>
+                A slide show will be available here soon!
+                </div>
             </div>
         )
     }

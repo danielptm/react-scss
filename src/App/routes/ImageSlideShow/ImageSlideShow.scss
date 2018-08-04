@@ -3,11 +3,14 @@
   min-height: 65vh;
   width: 100%;
   background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
 
 }
 
 .column{
-  display: inline-block;
+  background-color: yellow;
+  top: 0px;
   height: 90vh;
   width: 25%;
 }

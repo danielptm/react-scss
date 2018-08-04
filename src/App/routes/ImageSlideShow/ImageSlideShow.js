@@ -12,13 +12,13 @@ class ImageSlideShow extends React.Component {
                         caption={'This is a picture of me at the DDND summer party.'}
                     />
                 </div>
-                <div className={style.column}>
+                <div >
 
                 </div>
-                <div className={style.column}>
+                <div >
 
                 </div>
-                <div className={style.column}>
+                <div >
 
                 </div>
             </div>

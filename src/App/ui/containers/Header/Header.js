@@ -12,7 +12,8 @@ class Header extends Component{
             showHeader: false,
             aboutMePressed: false,
             experiencePressed: false,
-            projectsPressed: false
+            projectsPressed: false,
+            skillsPressed: false
         }
     }
 
@@ -21,18 +22,29 @@ class Header extends Component{
             this.setState({aboutMePressed: true});
             this.setState({experiencePressed: false});
             this.setState({projectsPressed: false});
+            this.setState({skillsPressed: false});
             this.routeToAbout();
 
         } else if(item==='experience') {
             this.setState({experiencePressed: true});
             this.setState({aboutMePressed: false});
             this.setState({projectsPressed: false});
+            this.setState({skillsPressed: false});
             this.routeToExperience();
 
-        } else if('projects') {
+        } else if(item==='skills') {
+            this.setState({experiencePressed: false});
+            this.setState({aboutMePressed: false});
+            this.setState({projectsPressed: false});
+            this.setState({skillsPressed: true});
+            this.routeToSkills();
+
+        }
+        else if('projects') {
             this.setState({experiencePressed: false});
             this.setState({aboutMePressed: false});
             this.setState({projectsPressed: true});
+            this.setState({skillsPressed: false});
             this.routeToProjects();
 
         }
@@ -41,6 +53,14 @@ class Header extends Component{
     routeToAbout = () => {
         this.props.history.push('/about');
     }
+
+    routeToSkills = () => {
+        this.setState({experiencePressed: false});
+        this.setState({aboutMePressed: false});
+        this.setState({projectsPressed: false});
+        this.setState({skillsPressed: true});
+        this.routeToProjects();
+    };
 
     routeToCity() {
         this.setState({experiencePressed: false});

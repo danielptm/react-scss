@@ -1,0 +1,58 @@
+.container{
+  background-color: #EAAFF7;
+  position: relative;
+}
+
+.listItem {
+  background-color: whitesmoke;
+}
+
+.button {
+  position: absolute;
+  right: 60px;
+  padding: 15px;
+  background-color: #FFFA6F;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.dropDown {
+  position: absolute;
+  right: 60px;
+  top: 55px;
+  border-radius: 7px;
+  background-color: #FFFDD7;
+
+}
+
+.item {
+  display: block;
+  width: 150px;
+  text-align: center;
+  border-bottom: 1px whitesmoke solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 4px;
+  &:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+  }
+}
+
+@keyframes buttonPress {
+  0% {
+   background-color: #FFFCB0;
+  }
+  80% {
+    background-color: #E8E465;
+
+  }
+  100% {
+    background-color: #FFFA6F;
+  }
+}

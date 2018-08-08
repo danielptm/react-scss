@@ -113,6 +113,12 @@ button:hover > .toolTip {
   background-color: white;
 }
 
+@media screen and (max-width: 400px){
+  .container{
+    padding-top: 225px;
+  }
+}
+
 @keyframes aboutDrop {
   from{
     height: 0px;

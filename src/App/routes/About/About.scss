@@ -5,6 +5,7 @@
   min-height: 650px;
   height: 100%;
   background-color: whitesmoke;
+  overflow-y: scroll;
 
 }
 
@@ -28,17 +29,19 @@
   width: 300px;
   height: auto;
   margin: 0 auto;
+  padding-bottom: 40px;
+
 }
 
 .about{
   display: block;
+  margin: auto;
   visibility: hidden;
-  height: 300px;
+  height: auto;
   width: 95%;
   max-width: 500px;
   background-color: white;
   border-radius: 10px;
-  margin: 20px auto;
   animation-duration: 1000ms;
   animation-delay: 1000ms;
   animation-name: aboutDrop;
@@ -116,7 +119,7 @@ button:hover > .toolTip {
     visibility: visible;
   }
   to{
-    height: 300px;
+    height: auto;
     visibility: visible;
   }
 }

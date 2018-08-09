@@ -74,21 +74,21 @@ class Experience extends Component {
                     <ExperienceBlurb
                         image={image}
                         title={'Digital development and Design and Levels'}
-                        urlName={'Company site'}
+                        urlName={'wearelevels.se'}
                         description={'Worked with startups Afripods, Bowling Bookers, and Target aid as a full stack developer. With these startups I used javascript frameworks such as vue, react, angular, and for the backend node. For some projects we did test driven development, used AWS and Heroku.'}
                         url={'https://www.wearelevels.com'}
                     />
                     <ExperienceBlurb
                         image={softronicimage}
                         title={'Softronic'}
-                        urlName={'Company site'}
+                        urlName={'softronic.se'}
                         description={'Worked as an inhouse consultant on the 1177.se platform. I worked with javaEE and angular which built a new portion of the platform.'}
                         url={'https://www.softronic.se'}
                     />
                     <ExperienceBlurb
                         image={repliorImage}
                         title={'Replior'}
-                        urlName={'Company site'}
+                        urlName={'replior.se'}
                         description={'Worked with java, javascript and blazemeter building automated integration tests and load tests.'}
                         url={'http://www.replior.se'}
                     />

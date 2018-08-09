@@ -13,7 +13,7 @@ class Projects extends React.Component {
                     <ExperienceBlurb
                         image={globatiImage}
                         url={'http://globati.com'}
-                        urlName={'Globati'}
+                        urlName={'globati.com'}
                         title={'Globati'}
                         description={'I came up with an idea for a hobby project which became the basis of a company. ' +
                         'I designed and built the entire Globati platform (globati.com). This was built with angular, react-native, java, node and AWS for hosting and database services.' +
@@ -24,7 +24,7 @@ class Projects extends React.Component {
                     <ExperienceBlurb
                         image={githubImage}
                         url={'http://github.com/danielptm'}
-                        urlName={'Github'}
+                        urlName={'github.com/danielptm'}
                         title={'Github projects'}
                         description={
                             'This is my github account. There is not a whole lot available to the public partly because I deleted a bunch of old repos too that I was not doing anything on.' +

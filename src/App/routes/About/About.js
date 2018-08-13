@@ -5,6 +5,7 @@ import image from '../../../assets/daniel2.png';
 import images from '../../../assets/images.svg';
 import usa from '../../../assets/usa.png';
 import sweden from '../../../assets/sweden.png';
+import AppContainer from '../../ui/AppContainer/AppContainer';
 
 
 class About extends Component {
@@ -58,6 +59,7 @@ class About extends Component {
 
     render(){
         return (
+        <AppContainer>
         <div className={style.container}>
             <div className={style.mainImageContainer}>
                 <img className={style.image} src={image} />
@@ -77,6 +79,7 @@ class About extends Component {
                 <img onClick={this.toggleSwedish} className={style.flag} src={sweden} />
             </div>
         </div>
+        </AppContainer>
         )
     }
 }

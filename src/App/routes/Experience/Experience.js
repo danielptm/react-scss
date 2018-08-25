@@ -7,6 +7,7 @@ import repliorImage from '../../../assets/replior.jpg';
 import Skill from "../../ui/Skill/Skill";
 import Dropdown from "../../ui/Dropdown/Dropdown";
 import AppContainer from '../../ui/AppContainer/AppContainer';
+import Layout from "../../ui/Layout/Layout";
 
 class Experience extends Component {
 
@@ -58,45 +59,44 @@ class Experience extends Component {
 
     render() {
         return (
-            <AppContainer>
-                <div className={style.container}>
-                    <div className={style.experienceContainer}>
-                        <div>
-                            <div className={style.skillHeader}>
-                                Skills
-                            </div>
-                            {/*<Dropdown*/}
-                                {/*filter={this.filter.bind(this)}*/}
-                                {/*skills={this.skills}*/}
-                            {/*/>*/}
-                            <div className={style.skillsContainer}>
-                                {this.skills.map((skill, index) => (<Skill key={index} name={skill.name} domain={skill.domain}/>))}
-                            </div>
-                        </div>
-                        <ExperienceBlurb
-                            image={image}
-                            title={'Digital development and Design and Levels'}
-                            urlName={'wearelevels.se'}
-                            description={'Worked with startups Afripods, Bowling Bookers, and Target aid as a full stack developer. With these startups I used javascript frameworks such as vue, react, angular, and for the backend node. For some projects we did test driven development, used AWS and Heroku.'}
-                            url={'https://www.wearelevels.com'}
-                        />
-                        <ExperienceBlurb
-                            image={softronicimage}
-                            title={'Softronic'}
-                            urlName={'softronic.se'}
-                            description={'Worked as an inhouse consultant on the 1177.se platform. I worked with javaEE and angular which built a new portion of the platform.'}
-                            url={'https://www.softronic.se'}
-                        />
-                        <ExperienceBlurb
-                            image={repliorImage}
-                            title={'Replior'}
-                            urlName={'replior.se'}
-                            description={'Worked with java, javascript and blazemeter building automated integration tests and load tests.'}
-                            url={'http://www.replior.se'}
-                        />
+            <Layout>
+                <div>
+                    <div className={style.skillHeader}>
+                        Skills
+                    </div>
+                    {/*<Dropdown*/}
+                        {/*filter={this.filter.bind(this)}*/}
+                        {/*skills={this.skills}*/}
+                    {/*/>*/}
+                    <div className={style.skillsContainer}>
+                        {this.skills.map((skill, index) => (<Skill key={index} name={skill.name} domain={skill.domain}/>))}
                     </div>
                 </div>
-            </AppContainer>
+                <div className={style.skillHeader}>
+                    Work experience
+                </div>
+                <ExperienceBlurb
+                    image={image}
+                    title={'Digital development and Design and Levels'}
+                    urlName={'wearelevels.se'}
+                    description={'Worked with startups Afripods, Bowling Bookers, and Target aid as a full stack developer. With these startups I used javascript frameworks such as vue, react, angular, and for the backend node. For some projects we did test driven development, used AWS and Heroku.'}
+                    url={'https://www.wearelevels.com'}
+                />
+                <ExperienceBlurb
+                    image={softronicimage}
+                    title={'Softronic'}
+                    urlName={'softronic.se'}
+                    description={'Worked as an inhouse consultant on the 1177.se platform. I worked with javaEE and angular which built a new portion of the platform.'}
+                    url={'https://www.softronic.se'}
+                />
+                <ExperienceBlurb
+                    image={repliorImage}
+                    title={'Replior'}
+                    urlName={'replior.se'}
+                    description={'Worked with java, javascript and blazemeter building automated integration tests and load tests.'}
+                    url={'http://www.replior.se'}
+                />
+            </Layout>
         )
     }
 }

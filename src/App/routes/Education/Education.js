@@ -21,7 +21,7 @@ class Education extends React.Component {
                     />
                     <ExperienceBlurb
                         title={'Stockholm University'}
-                        description={'After developing an interest in global health through my anthropology studies I went on to study public health. I became interested in e-health and was coding even more, developing hobby pythong projects and small websites, I thought that I wanted to become a product manager in e health projects.'}
+                        description={'After developing an interest in global health through my anthropology studies I went on to study public health. I became interested in e-health and was coding even more, developing hobby python projects and small websites, I thought that I wanted to become a product manager in e health projects.'}
                         image={suImage}
                         url={'https://www.su.se/english/'}
                         urlName={'su.se'}

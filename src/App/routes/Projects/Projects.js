@@ -39,9 +39,9 @@ class Projects extends React.Component {
                     image={peImage}
                     url={'https://github.com/danielptm/practice.git'}
                     urlName={'https://github.com/danielptm/practice'}
-                    title={'Project Euler problems'}
-                    description={'These are some of the problems that I have done projecteuler.net. The solutions are written in nodejs.' +
-                    'I also take this opportunity to practice unit testing with mocha.'}
+                    title={'Code problems'}
+                    description={'These are some coding problems that I have done taken from websites that provide CS problems such as projecteuler.net, uva.onlinejudge.org and others . The solutions are written in nodejs.' +
+                    ' I also take this opportunity to practice unit testing with mocha.'}
                 />
             </Layout>
         )

@@ -7,6 +7,7 @@ import Header from './ui/containers/Header/Header';
 import About from "./routes/About/About";
 import Experience from "./routes/Experience/Experience";
 import Projects from "./routes/Projects/Projects";
+import Education from './routes/Education/Education';
 import ImageSlideShow from "./routes/ImageSlideShow/ImageSlideShow";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
                   <Switch>
                       <Route path="/" exact component={City} />
                       <Route path="/about" exact component={About} />
+                      <Route path="/education" exact component={Education} />
                       <Route path="/experience" exact component={Experience} />
                       <Route path="/projects" exact component={Projects} />
                       <Route path="/slideshow" exact component={ImageSlideShow} />

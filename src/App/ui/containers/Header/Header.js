@@ -13,7 +13,8 @@ class Header extends Component{
             aboutMePressed: false,
             experiencePressed: false,
             projectsPressed: false,
-            skillsPressed: false
+            skillsPressed: false,
+            educationPressed: false
         }
     }
 
@@ -23,57 +24,85 @@ class Header extends Component{
             this.setState({experiencePressed: false});
             this.setState({projectsPressed: false});
             this.setState({skillsPressed: false});
+            this.setState({educationPressed: false});
             this.routeToAbout();
-
         } else if(item==='experience') {
             this.setState({experiencePressed: true});
             this.setState({aboutMePressed: false});
             this.setState({projectsPressed: false});
             this.setState({skillsPressed: false});
+            this.setState({educationPressed: false});
             this.routeToExperience();
-
         } else if(item==='skills') {
             this.setState({experiencePressed: false});
             this.setState({aboutMePressed: false});
             this.setState({projectsPressed: false});
             this.setState({skillsPressed: true});
+            this.setState({educationPressed: false});
             this.routeToSkills();
-
-        }
-        else if('projects') {
+        } else if(item === 'projects') {
             this.setState({experiencePressed: false});
             this.setState({aboutMePressed: false});
             this.setState({projectsPressed: true});
             this.setState({skillsPressed: false});
+            this.setState({educationPressed: false});
             this.routeToProjects();
+        } else if(item === 'education') {
+            this.setState({experiencePressed: false});
+            this.setState({aboutMePressed: false});
+            this.setState({projectsPressed: false});
+            this.setState({skillsPressed: false});
+            this.setState({educationPressed: true});
+            this.routeToEducation();
 
         }
     }
 
     routeToAbout = () => {
+        this.deactivateRoutes();
+        this.setState({aboutMePressed: true})
         this.props.history.push('/about');
     }
 
     routeToSkills = () => {
-        this.setState({experiencePressed: false});
-        this.setState({aboutMePressed: false});
-        this.setState({projectsPressed: false});
-        this.setState({skillsPressed: true});
+        this.deactivateRoutes();
+        this.setState({skillsPressed: true})
         this.routeToProjects();
     };
 
     routeToCity() {
-        this.setState({experiencePressed: false});
-        this.setState({aboutMePressed: false});
+        this.deactivateRoutes();
         this.props.history.push('/');
     }
 
     routeToExperience() {
+        this.deactivateRoutes();
+        this.setState({experiencePressed: true})
         this.props.history.push('/experience');
     }
 
     routeToProjects() {
+        this.deactivateRoutes();
+        this.setState({projectsPressed: true})
         this.props.history.push('/projects');
+    }
+
+    routeToEducation(){
+        console.log('HIHIHI');
+        this.deactivateRoutes();
+        this.setState({educationPressed: true});
+        this.props.history.push('/education');
+    }
+
+    deactivateRoutes = () => {
+        this.setState({
+            showHeader: false,
+            aboutMePressed: false,
+            experiencePressed: false,
+            projectsPressed: false,
+            skillsPressed: false,
+            educationPressed: false
+        })
     }
 
     render() {
@@ -85,6 +114,10 @@ class Header extends Component{
                         onClick={ () => this.toggleLink('about')}
                         className={this.state.aboutMePressed ? style.listItemPressed : style.listItem}>
                         <a>about</a></li>
+                    <li
+                        onClick={() => this.toggleLink('education')}
+                        className={this.state.educationPressed ? style.listItemPressed : style.listItem}>
+                        <a>education</a></li>
                     <li
                         onClick={() => this.toggleLink('experience')}
                         className={this.state.experiencePressed ? style.listItemPressed : style.listItem}>

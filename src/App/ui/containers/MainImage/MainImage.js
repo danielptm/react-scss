@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import style from './MainImage.scss';
 import image1 from '../../../../assets/daniel.png';
 import image2 from '../../../../assets/me.jpg';
+import Layout from "../../Layout/Layout";
 
 class MainImage extends Component{
 
@@ -18,11 +19,9 @@ class MainImage extends Component{
 
     render() {
         return(
-          <div>
               <div className={style.imageContainer}>
                 <img onMouseEnter={this.switchImage} className={style.image} src={this.state.image} />
               </div>
-          </div>
         );
     }
 }

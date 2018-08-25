@@ -8,6 +8,7 @@
 
 }
 
+
 .image{
   height: 65px;
   width: 65px;
@@ -32,7 +33,6 @@ ul{
   float: right;
   list-style-type: none;
   text-align: center;
-  padding-right: 20px;
 }
 
 li:hover{
@@ -57,3 +57,24 @@ a{
   text-decoration: none !important;
 }
 
+@media screen and(max-width: 510px) {
+  .listItem{
+    width: 100%;
+  }
+  ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  ul > li {
+    width: 100%;
+    text-align: center;
+  }
+  .listItemPressed{
+    line-height: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+}

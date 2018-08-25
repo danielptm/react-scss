@@ -109,7 +109,7 @@ class Header extends Component{
         return(
             <div className={style.container}>
                 <img onClick={() => this.routeToCity()} className={style.image} src={image} />
-                <ul className={style.list}>
+                <ul>
                     <li
                         onClick={ () => this.toggleLink('about')}
                         className={this.state.aboutMePressed ? style.listItemPressed : style.listItem}>

@@ -3,6 +3,7 @@ import style from './Projects.scss';
 import ExperienceBlurb from '../../ui/ExperienceBlurb/ExperienceBlurb';
 import globatiImage from '../../../assets/gb.jpg';
 import githubImage from '../../../assets/gh.png';
+import peImage from '../../../assets/pe.png';
 import AppContainer from '../../ui/AppContainer/AppContainer';
 
 class Projects extends React.Component {
@@ -34,6 +35,14 @@ class Projects extends React.Component {
                                 'Although there is some stuff there. Currently I am setting up seed projects in react and node that will be used by me as well as for future projects' +
                                 'at the company I work for, so that we can get projects up and running quickly and in a consistent way.'
                             }
+                        />
+                        <ExperienceBlurb
+                            image={peImage}
+                            url={'https://github.com/danielptm/practice.git'}
+                            urlName={'https://github.com/danielptm/practice'}
+                            title={'Project Euler problems'}
+                            description={'These are some of the problems that I have done projecteuler.net. The solutions are written in nodejs.' +
+                            'I also take this opportunity to practice unit testing with mocha.'}
                         />
                     </div>
                 </div>

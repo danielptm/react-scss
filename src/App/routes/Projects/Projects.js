@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import moment from 'moment';
 import style from './Projects.scss';
 import ExperienceBlurb from '../../ui/ExperienceBlurb/ExperienceBlurb';
 import globatiImage from '../../../assets/gb.jpg';
@@ -8,6 +10,20 @@ import AppContainer from '../../ui/AppContainer/AppContainer';
 import Layout from "../../ui/Layout/Layout";
 
 class Projects extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {commit: '', date: ''};
+    }
+
+    componentDidMount() {
+        axios.get('https://api.github.com/repos/danielptm/practice/commits')
+        .then((res) => {
+            const commit = res.data[0].commit.message;
+            const date = moment(res.data[0].commit.committer.date).format('L');
+            this.setState({commit: commit, date: date});
+        })
+    }
 
     render(){
         return(
@@ -35,14 +51,16 @@ class Projects extends React.Component {
                         'at the company I work for, so that we can get projects up and running quickly and in a consistent way.'
                     }
                 />
-                <ExperienceBlurb
+                { this.state.commit !== '' ? <ExperienceBlurb
                     image={peImage}
                     url={'https://github.com/danielptm/practice.git'}
                     urlName={'https://github.com/danielptm/practice'}
                     title={'Code problems'}
+                    extraInfoDate={this.state.date}
+                    extraInfo={this.state.commit}
                     description={'These are some coding problems that I have done taken from websites that provide CS problems such as projecteuler.net, uva.onlinejudge.org and others . The solutions are written in nodejs.' +
                     ' I also take this opportunity to practice unit testing with mocha.'}
-                />
+                />: <p>Loading</p> }
             </Layout>
         )
     }

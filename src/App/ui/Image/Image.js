@@ -26,7 +26,7 @@ const Image = (props) => {
     const enter = () =>{
       if(props.path2 != undefined){
         this.image = 
-        <a href={props.linkPath}><img 
+        <a href={props.linkPath}><img
           className={imageStyle}
           src={props.path2} />
         </a>

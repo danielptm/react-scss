@@ -31,7 +31,9 @@ class Education extends React.Component {
                         description={'I realized quickly that I wanted to code and not be a product manager, so I enrolled in java development school here. I took courses in programming fundamentals, web development, android, database fundamentals, API integration and more.'}
                         image={thImage}
                         url={'http://teknikhogskolan.se/'}
+                        url2={'https://s3.eu-central-1.amazonaws.com/danielptuttle.com/static/javaCertificate.pdf'}
                         urlName={'teknikhogskolan.se/'}
+                        url2Name={'Advanced java certification'}
                     />
 
                 </Layout>

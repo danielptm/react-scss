@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom';
 import style from './About.scss';
 import image from '../../../assets/daniel2.png';
 import images from '../../../assets/images.svg';
-import usa from '../../../assets/usa.png';
+import uk from '../../../assets/uk.png';
 import sweden from '../../../assets/sweden.png';
 import Layout from '../../ui/Layout/Layout';
 
@@ -74,7 +74,7 @@ class About extends Component {
                 {this.state.english ? this.englishText() : this.swedishText() }
             </div>
             <div className={style.flagContainer}>
-                <img onClick={this.toggleEnglish} className={style.flag} src={usa} />
+                <img onClick={this.toggleEnglish} className={style.flag} src={uk} />
                 <img onClick={this.toggleSwedish} className={style.flag} src={sweden} />
             </div>
             </Layout>

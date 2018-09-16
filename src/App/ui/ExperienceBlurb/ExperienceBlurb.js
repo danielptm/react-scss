@@ -20,9 +20,9 @@ const experienceBlurb = (props) => {
             <div className={style.textContainer}>
                 <p className={style.title}>{props.title}</p>
                 <p className={style.description}>{props.description}</p>
-                {props.url2 ? <a className={style.url} target='_blank' href={props.url2} >{props.url2Name}</a> : null}
-                {props.extraInfo ? extraInfo : null }
-                <a target='_blank' className={style.url} href={props.url}>{props.urlName}</a>
+                <div>{props.url2 ? <a className={style.url} target='_blank' href={props.url2} >{props.url2Name}</a> : null}</div>
+                <div>{props.extraInfo ? extraInfo : null }</div>
+                <div><a target='_blank' className={style.url} href={props.url}>{props.urlName}</a></div>
             </div>
         </div>
     )

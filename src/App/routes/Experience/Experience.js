@@ -79,21 +79,21 @@ class Experience extends Component {
                     image={image}
                     title={'Digital development and Design and Levels'}
                     urlName={'wearelevels.se'}
-                    description={'Worked with startups Afripods, Bowling Bookers, and Target aid as a full stack developer. With these startups I used javascript frameworks such as vue, react, angular, and for the backend node. For some projects we did test driven development, used AWS and Heroku.'}
+                    description={'Worked with startups Afripods, Bowling Bookers, and Target aid as a full stack developer. With these startups I used javascript frameworks such as vue, react and angular, and for the backend node. For some projects we did test driven development, used AWS, Heroku.'}
                     url={'https://www.wearelevels.com'}
                 />
                 <ExperienceBlurb
                     image={softronicimage}
                     title={'Softronic'}
                     urlName={'softronic.se'}
-                    description={'Worked as an inhouse consultant on the 1177.se platform. I worked with javaEE and angular which built a new portion of the platform.'}
+                    description={'Built a new platform for health care providers with a team of 3 others. I worked with javaEE and angular. I built a new notification service that sent notifications through a mobile service provider. I also was the primary angular developer for that project and worked with the UX designer and did the whole interface for the new platform.'}
                     url={'https://www.softronic.se'}
                 />
                 <ExperienceBlurb
                     image={repliorImage}
                     title={'Replior'}
                     urlName={'replior.se'}
-                    description={'Worked with java, javascript and blazemeter building automated integration tests and load tests.'}
+                    description={'Worked as a junior developer on a software platform for use in hospitals in Sweden. I helped maintain their primary product which was called trialonline. For it I did load testing with blazemeter, jmeter, beanshell, built integration tests with java/selenium, built REST api endpoints with JAXRS and spring and did a bit front simple front end stuff with HTML/css and javascript and JSP.'}
                     url={'http://www.replior.se'}
                 />
             </Layout>

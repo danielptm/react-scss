@@ -21,7 +21,8 @@ class Projects extends React.Component {
         .then((res) => {
             const commit = res.data[0].commit.message;
             const date = moment(res.data[0].commit.committer.date).format('L');
-            this.setState({commit: commit, date: date});
+            const url = res.data[0].html_url;
+            this.setState({commit: commit, date: date, url: url});
         })
     }
 
@@ -36,7 +37,11 @@ class Projects extends React.Component {
                     description={'I came up with an idea for a hobby project which became the basis of a company. ' +
                     'I designed and built the entire Globati platform (globati.com). This was built with angular, react-native, java, node and AWS for hosting and database services.' +
                     'It is hosted on 3 S3 buckets and connects through an API built with java/spring on an elastic beanstalk instance. ' +
-                    'The mobile app was built with react-native and is available on Googleplay as well as Appstore. The app connects to an api written in node also on an elastic beanstalk. If you want to see the app in action, make sure to search for Stockholm. '
+                    'The mobile app was built with react-native and is available on Googleplay as well as Appstore. ' +
+                    'The app connects to an api written in node also on an elastic beanstalk. ' +
+                    'If you want to see the app in action, make sure to search for Stockholm. ' +
+                    'Disclaimer: How the app is going to work is going through a change right now. So the node server was shut down, and therefore the app doesn\'t work at the moment. '+
+                    'It will be up and running and with new features by November.'
                     }
                 />
                 <ExperienceBlurb
@@ -53,13 +58,13 @@ class Projects extends React.Component {
                 />
                 { this.state.commit !== '' ? <ExperienceBlurb
                     image={peImage}
-                    url={'https://github.com/danielptm/practice.git'}
-                    urlName={'https://github.com/danielptm/practice'}
+                    url={this.state.url}
+                    urlName={'Code review'}
                     title={'Code problems'}
                     extraInfoDate={this.state.date}
                     extraInfo={this.state.commit}
-                    description={'These are some coding problems that I have done taken from websites that provide CS problems such as projecteuler.net, uva.onlinejudge.org and others . The solutions are written in nodejs.' +
-                    ' I also take this opportunity to practice unit testing with mocha.'}
+                    description={'These are some coding problems that I have done taken from websites that provide CS problems such as projecteuler.net, uva.onlinejudge.org and others . The solutions are written in node and java.' +
+                    ' I also take this opportunity to practice unit testing with mocha for node and junit for the java problems.'}
                 />: <p>Loading</p> }
             </Layout>
         )

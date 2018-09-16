@@ -33,7 +33,7 @@ class Education extends React.Component {
                         url={'http://teknikhogskolan.se/'}
                         url2={'https://s3.eu-central-1.amazonaws.com/danielptuttle.com/static/javaCertificate.pdf'}
                         urlName={'teknikhogskolan.se/'}
-                        url2Name={'Advanced java certification'}
+                        url2Name={'Java certification'}
                     />
 
                 </Layout>

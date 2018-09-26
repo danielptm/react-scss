@@ -53,30 +53,29 @@ class About extends Component {
     }
 
     routeToSlideShow = () => {
-        console.log('heyhey');
         this.props.history.push('/slideshow');
     }
 
     render(){
         return (
             <Layout>
-            <div className={style.mainImageContainer}>
-                <img className={style.image} src={image} />
-                <button
-                    disabled
-                    onClick={this.routeToSlideShow}
-                    className={style.imagesButton}>
-                    <div className={style.toolTip}>Image slide show coming soon!</div>
-                  <img className={style.images} src={images} />
-                </button>
-            </div>
-            <div className={style.about}>
-                {this.state.english ? this.englishText() : this.swedishText() }
-            </div>
-            <div className={style.flagContainer}>
-                <img onClick={this.toggleEnglish} className={style.flag} src={uk} />
-                <img onClick={this.toggleSwedish} className={style.flag} src={sweden} />
-            </div>
+                <div className={style.mainImageContainer}>
+                    <img className={style.image} src={image} />
+                    <button
+                        disabled
+                        onClick={this.routeToSlideShow}
+                        className={style.imagesButton}>
+                        <div className={style.toolTip}>Image slide show coming soon!</div>
+                      <img className={style.images} src={images} />
+                    </button>
+                </div>
+                <div className={style.about}>
+                    {this.state.english ? this.englishText() : this.swedishText() }
+                </div>
+                <div className={style.flagContainer}>
+                    <img onClick={this.toggleEnglish} className={style.flag} src={uk} />
+                    <img onClick={this.toggleSwedish} className={style.flag} src={sweden} />
+                </div>
             </Layout>
         )
     }

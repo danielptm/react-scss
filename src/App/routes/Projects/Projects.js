@@ -6,6 +6,7 @@ import ExperienceBlurb from '../../ui/ExperienceBlurb/ExperienceBlurb';
 import globatiImage from '../../../assets/gb.jpg';
 import githubImage from '../../../assets/gh.png';
 import peImage from '../../../assets/pe.png';
+import sunny from '../../../assets/sunny.svg';
 import AppContainer from '../../ui/AppContainer/AppContainer';
 import Layout from "../../ui/Layout/Layout";
 
@@ -54,6 +55,15 @@ class Projects extends React.Component {
                         'Globati lives entirely in private repos. I can show the source for for those projects for interview purposes.' +
                         'Although there is some stuff there. Currently I am setting up seed projects in react and node that will be used by me as well as for future projects' +
                         'at the company I work for, so that we can get projects up and running quickly and in a consistent way.'
+                    }
+                />
+                <ExperienceBlurb
+                    image={sunny}
+                    url={'http://github.com/danielptm/WeatherApp'}
+                    urlName={'Weather app'}
+                    title={'Weather app'}
+                    description={
+                        'This is just a really small project I made in about 90 minutes just playing around with the https://openweathermap.org/api api in order to predict the weather in Portland Oregon'
                     }
                 />
                 { this.state.commit !== '' ? <ExperienceBlurb

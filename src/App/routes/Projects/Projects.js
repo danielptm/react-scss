@@ -7,6 +7,7 @@ import globatiImage from '../../../assets/gb.jpg';
 import githubImage from '../../../assets/gh.png';
 import peImage from '../../../assets/pe.png';
 import sunny from '../../../assets/sunny.svg';
+import me from '../../../assets/daniel.png';
 import AppContainer from '../../ui/AppContainer/AppContainer';
 import Layout from "../../ui/Layout/Layout";
 
@@ -64,6 +65,15 @@ class Projects extends React.Component {
                     title={'Weather app'}
                     description={
                         'This is just a really small project I made in about 90 minutes just playing around with the https://openweathermap.org/api api in order to predict the weather in Portland Oregon'
+                    }
+                />
+                <ExperienceBlurb
+                    image={me}
+                    url={'https://github.com/danielptm/react-scss'}
+                    urlName={'This website source code'}
+                    title={'My personal website'}
+                    description={
+                        'This website was made by me just as a little hobby project to practice react and also demonstrate my skills/experience at the same time. The design is completely my own (but I did not do the photoshopped image).'
                     }
                 />
                 { this.state.commit !== '' ? <ExperienceBlurb

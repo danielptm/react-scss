@@ -4,6 +4,8 @@ import ExperienceBlurb from '../../ui/ExperienceBlurb/ExperienceBlurb';
 import image from '../../../assets/ddnd.png';
 import softronicimage from '../../../assets/softronic.png';
 import repliorImage from '../../../assets/replior.jpg';
+import aroghia from '../../../assets/aroghia.png';
+import nike from '../../../assets/nike.jpg';
 import Skill from "../../ui/Skill/Skill";
 import Dropdown from "../../ui/Dropdown/Dropdown";
 import AppContainer from '../../ui/AppContainer/AppContainer';
@@ -29,7 +31,7 @@ class Experience extends Component {
         {name: 'jsp', domain: 'FE'},
         {name: 'jsf', domain: 'FE'},
         {name: 'mysql', domain: 'BE'},
-        {name: 'nodejs', domain: 'other'},
+        {name: 'nodejs', domain: 'BE'},
         {name: 'git', domain: 'tools'},
         {name: 'linux', domain: 'BE'},
         {name: 'intellij', domain: 'tools'},
@@ -64,10 +66,6 @@ class Experience extends Component {
                     <div className={style.skillHeader}>
                         Skills
                     </div>
-                    {/*<Dropdown*/}
-                        {/*filter={this.filter.bind(this)}*/}
-                        {/*skills={this.skills}*/}
-                    {/*/>*/}
                     <div className={style.skillsContainer}>
                         {this.skills.map((skill, index) => (<Skill key={index} name={skill.name} domain={skill.domain}/>))}
                     </div>
@@ -75,6 +73,13 @@ class Experience extends Component {
                 <div className={style.skillHeader}>
                     Work experience
                 </div>
+                <ExperienceBlurb
+                    image={aroghia}
+                    title={'Aroghia group'}
+                    urlName={'http://aroghia.com'}
+                    description={'I currently work as a senior java developer consultant with Aroghia Group and have a 1 year contract with Nike.'}
+                    url={'http://aroghia.com'}
+                />
                 <ExperienceBlurb
                     image={image}
                     title={'Digital development and Design and Levels'}

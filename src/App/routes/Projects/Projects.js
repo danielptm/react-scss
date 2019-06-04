@@ -33,18 +33,11 @@ class Projects extends React.Component {
             <Layout>
                 <ExperienceBlurb
                     image={globatiImage}
-                    url={'http://globati.com'}
-                    urlName={'globati.com'}
-                    title={'Globati'}
+                    url={'http://myhostelsapp.com'}
+                    urlName={'myhostelsapp.com'}
+                    title={'myhostelsapp'}
                     description={'I came up with an idea for a hobby project which became the basis of a company. ' +
-                    'I designed and built the entire Globati platform (globati.com). This was built with angular, react-native, java, node and AWS for hosting and database services.' +
-                    'It is hosted on 3 S3 buckets and connects through an API built with java/spring on an elastic beanstalk instance. ' +
-                    'The mobile app was built with react-native and is available on Googleplay as well as Appstore. ' +
-                    'The app connects to an api written in node also on an elastic beanstalk. ' +
-                    'If you want to see the app in action, make sure to search for Stockholm. ' +
-                    'Disclaimer: How the app is going to work is going through a change right now. So the node server was shut down, and therefore the app doesn\'t work at the moment. '+
-                    'It will be up and running and with new features by November.'
-                    }
+                    'I designed and built the entire myhostelsapp platform (myhostelsapp.com). This was built with angular, react-native, java, S3, EC2, ASG, Route53, cloudfront and dynamodb.'}
                 />
                 <ExperienceBlurb
                     image={githubImage}

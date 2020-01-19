@@ -8,6 +8,7 @@ import githubImage from '../../../assets/gh.png';
 import peImage from '../../../assets/pe.png';
 import sunny from '../../../assets/sunny.svg';
 import me from '../../../assets/daniel.png';
+import s3 from '../../../assets/s3image.png';
 import AppContainer from '../../ui/AppContainer/AppContainer';
 import Layout from "../../ui/Layout/Layout";
 
@@ -33,11 +34,11 @@ class Projects extends React.Component {
             <Layout>
                 <ExperienceBlurb
                     image={globatiImage}
-                    url={'http://myhostelsapp.com'}
-                    urlName={'myhostelsapp.com'}
-                    title={'myhostelsapp'}
+                    url={'http://hostelsync.com'}
+                    urlName={'hostelsync.com'}
+                    title={'hostelsync'}
                     description={'I came up with an idea for a hobby project which became the basis of a company. ' +
-                    'I designed and built the entire myhostelsapp platform (myhostelsapp.com). This was built with angular, react-native, java, S3, EC2, ASG, Route53, cloudfront and dynamodb.'}
+                    'I designed and built the entire hostelsync platform (hostelsync.com). This was built with angular, react-native, java, S3, EC2, ASG, Route53, cloudfront and dynamodb.'}
                 />
                 <ExperienceBlurb
                     image={githubImage}
@@ -67,6 +68,15 @@ class Projects extends React.Component {
                     title={'My personal website'}
                     description={
                         'This website was made by me just as a little hobby project to practice react and also demonstrate my skills/experience at the same time. The design is completely my own (but I did not do the photoshopped image).'
+                    }
+                />
+                <ExperienceBlurb
+                    image={s3}
+                    url={'https://github.com/danielptm/s3copier'}
+                    urlName={'S3 copier'}
+                    title={'S3copier'}
+                    description={
+                        'This was a project that i developed to solve a problem at work. The s3copier makes it easy to do various types of copies of files stored in s3.'
                     }
                 />
                 { this.state.commit !== '' ? <ExperienceBlurb

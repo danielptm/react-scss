@@ -6,12 +6,20 @@ import suImage from '../../../assets/SU.png'
 import thImage from '../../../assets/th.png';
 import AppContainer from "../../ui/AppContainer/AppContainer";
 import Layout from "../../ui/Layout/Layout";
+import gt from '../../../assets/GT.png';
 
 class Education extends React.Component {
     render() {
         return(
             <div className={style.container}>
                 <Layout>
+                    <ExperienceBlurb
+                        title={'Georgia Tech'}
+                        description={'Currently doing an MS in Computer Science.'}
+                        image={gt}
+                        url={'http://omscs.gatech.edu/'}
+                        urlName={'omscs.gatech.edu'}
+                    />
                     <ExperienceBlurb
                         title={'University of Washington'}
                         description={'I did a BA in anthropology here. It was also during this time that I discovered that I liked coding and began to do it as a hobby.'}

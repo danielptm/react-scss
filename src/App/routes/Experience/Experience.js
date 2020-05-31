@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import style from './Experience.scss';
 import ExperienceBlurb from '../../ui/ExperienceBlurb/ExperienceBlurb';
-import image from '../../../assets/ddnd.png';
+import levels from '../../../assets/levels.png';
 import softronicimage from '../../../assets/softronic.png';
 import repliorImage from '../../../assets/replior.jpg';
-import aroghia from '../../../assets/aroghia.png';
 import nike from '../../../assets/nike.jpg';
+import st from '../../../assets/theStandard.png';
 import Skill from "../../ui/Skill/Skill";
 import Dropdown from "../../ui/Dropdown/Dropdown";
 import AppContainer from '../../ui/AppContainer/AppContainer';
@@ -22,14 +22,11 @@ class Experience extends Component {
         {name: 'Javascript', domain: 'FE'},
         {name: 'react', domain: 'FE'},
         {name: 'react-native', domain: 'FE'},
-        {name: 'python', domain: 'BE'},
         {name: 'typescript', domain: 'other'},
         {name: 'angular5', domain: 'FE'},
         {name: 'vue', domain: 'FE'},
         {name: 'html', domain: 'FE'},
         {name: 'css', domain: 'FE'},
-        {name: 'jsp', domain: 'FE'},
-        {name: 'jsf', domain: 'FE'},
         {name: 'mysql', domain: 'BE'},
         {name: 'nodejs', domain: 'BE'},
         {name: 'git', domain: 'tools'},
@@ -39,6 +36,13 @@ class Experience extends Component {
         {name: 'webstorm', domain: 'tools'},
         {name: 'AWS', domain: 'other'},
         {name: 'S3', domain: 'other'},
+        {name: 'SQS', domain: 'other'},
+        {name: 'SNS', domain: 'other'},
+        {name: 'ELB', domain: 'other'},
+        {name: 'ASG', domain: 'other'},
+        {name: 'Dynamodb', domain: 'BE'},
+        {name: 'Terraform', domain: 'other'},
+        {name: 'Docker', domain: 'other'},
         {name: 'elastic beanstalk', domain: 'BE'},
         {name: 'RDS', domain: 'BE'},
         {name: 'route53', domain: 'other'},
@@ -74,15 +78,22 @@ class Experience extends Component {
                     Work experience
                 </div>
                 <ExperienceBlurb
-                    image={aroghia}
-                    title={'Aroghia group'}
-                    urlName={'http://aroghia.com'}
-                    description={'I currently work as a senior java developer consultant with Aroghia Group and have a 1 year contract with Nike.'}
-                    url={'http://aroghia.com'}
+                    image={st}
+                    title={'The Standard'}
+                    urlName={'standard.com'}
+                    description={'Worked on the global pricing team at Nike to provide services for internal business tools. The job entails working with springboot, java8, SQS, SNS, dynamodb, terraform, docker, splunk, redshift, jenkins, junit, mockito amongst other tools in Nike’s ecosystem.'}
+                    url={'https://www.standard.com/'}
                 />
                 <ExperienceBlurb
-                    image={image}
-                    title={'Digital development and Design and Levels'}
+                    image={nike}
+                    title={'Nike'}
+                    urlName={'nike.com'}
+                    description={'Worked on the global pricing team at Nike to provide services for internal business tools. The job entails working with springboot, java8, SQS, SNS, dynamodb, terraform, docker, splunk, redshift, jenkins, junit, mockito amongst other tools in Nike’s ecosystem.'}
+                    url={'http://nike.com'}
+                />
+                <ExperienceBlurb
+                    image={levels}
+                    title={'Levels'}
                     urlName={'wearelevels.se'}
                     description={'Worked with startups Afripods, Bowling Bookers, and Target aid as a full stack developer. With these startups I used javascript frameworks such as vue, react and angular, and for the backend node. For some projects we did test driven development, used AWS, Heroku.'}
                     url={'https://www.wearelevels.com'}
